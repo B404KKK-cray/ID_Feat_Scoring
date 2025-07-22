@@ -707,7 +707,7 @@ def connect():
 	return client
 
 
-def shortlisted():
+def shortlisted(client):
 	sql = '''with shortlisted as (
   select mis_date,
          t24_customer_id
