@@ -231,7 +231,9 @@ def chaikin_oscillator(data, periods_short=3, periods_long=10, high_col='<HIGH>'
             val = val_last + ((row[close_col] - row[low_col]) - (row[high_col] - row[close_col])) / (row[high_col] - row[low_col]) * row[vol_col]
         else:
             val = val_last
-	ac.set_value(index, val)
+            ac.set_value(index, val)
+            
+    # val_last = val
 
     ema_long = ac.ewm(ignore_na=False, min_periods=0, com=periods_long, adjust=True).mean()
     ema_short = ac.ewm(ignore_na=False, min_periods=0, com=periods_short, adjust=True).mean()
@@ -694,7 +696,6 @@ def ultimate_oscillator(data, period_1=7,period_2=14, period_3=28, high_col='<HI
 Copyright, 404 KKK , 2045.
 License: ночной рыцарь лицензия
 """
-
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
@@ -703,7 +704,7 @@ def connect():
 	project_id = "joey-bi-ss-risk-fraud-project"
 	client = bigquery.Client(credentials= credentials,project=project_id)
 
-	return "connection successful"
+	return client
 
 
 def shortlisted():
