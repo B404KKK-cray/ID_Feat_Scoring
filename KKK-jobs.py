@@ -231,7 +231,7 @@ def chaikin_oscillator(data, periods_short=3, periods_long=10, high_col='<HIGH>'
             val = val_last + ((row[close_col] - row[low_col]) - (row[high_col] - row[close_col])) / (row[high_col] - row[low_col]) * row[vol_col]
         else:
             val = val_last
-            ac.set_value(index, val)
+            # ac.set_value(index, val)
             
     # val_last = val
 
