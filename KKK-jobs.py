@@ -231,8 +231,7 @@ def chaikin_oscillator(data, periods_short=3, periods_long=10, high_col='<HIGH>'
             val = val_last + ((row[close_col] - row[low_col]) - (row[high_col] - row[close_col])) / (row[high_col] - row[low_col]) * row[vol_col]
         else:
             val = val_last
-        ac.set_value(index, val)
-	# val_last = val
+	ac.set_value(index, val)
 
     ema_long = ac.ewm(ignore_na=False, min_periods=0, com=periods_long, adjust=True).mean()
     ema_short = ac.ewm(ignore_na=False, min_periods=0, com=periods_short, adjust=True).mean()
