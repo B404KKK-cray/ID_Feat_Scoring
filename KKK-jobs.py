@@ -226,12 +226,12 @@ def chaikin_oscillator(data, periods_short=3, periods_long=10, high_col='<HIGH>'
     ac = pd.Series([])
     val_last = 0
 	
-    for index, row in data.iterrows():
-        if row[high_col] != row[low_col]:
-            val = val_last + ((row[close_col] - row[low_col]) - (row[high_col] - row[close_col])) / (row[high_col] - row[low_col]) * row[vol_col]
-        else:
-            val = val_last
-            # ac.set_value(index, val)
+    #for index, row in data.iterrows():
+    #    if row[high_col] != row[low_col]:
+    #        val = val_last + ((row[close_col] - row[low_col]) - (row[high_col] - row[close_col])) / (row[high_col] - row[low_col]) * row[vol_col]
+    #    else:
+    #        val = val_last
+    #        ac.set_value(index, val)
             
     # val_last = val
 
