@@ -707,7 +707,7 @@ def connect():
 	return client
 
 
-def shortlisted(client):
+def shortlisted(client_con):
 	sql = '''with shortlisted as (
   select mis_date,
          t24_customer_id
@@ -758,5 +758,5 @@ from combine_ntb
 group by mis_date,
         flagging
 '''
-	shortlisted = client.query(sql).to_dataframe()
+	shortlisted = client_con.query(sql).to_dataframe()
 	return shortlisted
