@@ -2127,7 +2127,7 @@ group by mis_date,
 	return Porto_util_app
 
 def ThruTheDoor(client_con):
-  sql = '''
+	sql = '''
 with base_limit as (
   select mis_date,
         t24_customer_id,
