@@ -78,6 +78,22 @@ def acc_dist(data, trend_periods=21, open_col='<OPEN>', high_col='<HIGH>', low_c
     
     return data
 
+def sht_ui(client_con):
+	
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
+
+  sql = '''
+With base as (
+  select 
+      *
+  from joey-bi-ss-risk-fraud-project.credit.SHTList_2025_08
+)
+select *
+from base
+'''
+	sht_ui = client_con.query(sql).to_dataframe()
+	return sht_ui
+
 """
 On Balance Volume (OBV)
 Source: http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:on_balance_volume_obv
@@ -766,9 +782,9 @@ group by mis_date,
 
 def Incoming_apps(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''with base_limit as (
+  sql = '''with base_limit as (
   select mis_date,
         t24_customer_id,
         limit_id,
@@ -1036,9 +1052,9 @@ from
 
 def disbursed(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 With disb_base as (
   select arrangement_id,
           limit_id,
@@ -1204,9 +1220,9 @@ group by funded_info,
 
 def Porto_DPD(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 with disb_base as (
   select mis_date,
         arrangement_id,
@@ -1406,9 +1422,9 @@ group by dpd_pt_date,
 
 def vintage_apps(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 with disb_data as (
   select mis_date as mis_pt_date,
         limit_id,
@@ -1554,9 +1570,9 @@ group by substr(string(mis_pt_date),1,7),
 
 def Segment_bad(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 With disb_base as (
   select arrangement_id,
           limit_id,
@@ -1907,9 +1923,9 @@ group by
 
 def Porto_util(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 with limit_base as (
   select t24_customer_id as CIF,
           limit_id,
@@ -2030,7 +2046,7 @@ group by mis_date,
 	return Porto_util_app
 
 def ThruTheDoor(client_con):
-sql = '''
+  sql = '''
 with base_limit as (
   select mis_date,
         t24_customer_id,
@@ -2235,9 +2251,9 @@ from result_incoming
 
 def limit_v2_3_DBR_perf(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 With limit_base as (
   select 
       t24_customer_id,
@@ -3076,9 +3092,9 @@ raw_3
 
 def reject_excap_bdown(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 With limit_base as (
   select 
       t24_customer_id,
@@ -3673,9 +3689,9 @@ from raw_3b
 
 def New_table_New_Risk_level(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 -- drop table joey-bi-ss-risk-fraud-project.credit.new_risk_level_2025_07;
 create table joey-bi-ss-risk-fraud-project.credit.new_risk_level_2025_07 as
 With limit_base as (
@@ -4550,9 +4566,9 @@ comb_band_4
 
 def limit_V2_porto_DPD(client_con):
 	
---DECLARE date1 STRING DEFAULT '2025-07-31';
+  ##DECLARE date1 STRING DEFAULT '2025-07-31';
 
-sql = '''
+  sql = '''
 With limit_base as (
   select 
       t24_customer_id,
@@ -4923,3 +4939,4 @@ from raw_3
 '''
 	limit_V2_porto_DPD = client_con.query(sql).to_dataframe()
 	return limit_V2_porto_DPD
+
