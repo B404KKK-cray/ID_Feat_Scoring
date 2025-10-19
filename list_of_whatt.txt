@@ -1,0 +1,77 @@
+Google Cloud Service - table list
+
+joey-bi-prod-project.staging.stg_collection__limit_loan
+staging.stg_loan__personal_loan_sys_limit_application
+joey-bi-ss-risk-fraud-project.credit.eligible_fund_info
+joey-bi-prod-project.staging.stg_collection__repayment_schedule
+joey-bi-prod-project.staging.stg_collection__limit_application
+
+joey-bi-ss-risk-fraud-project.credit.funded_info_2025_03_31 -- uploadan sendiri
+joey-bi-prod-project.staging.stg_loan__sake_credit_limit_shortlisted
+
+joey-bi-prod-project.staging.stg_onboarding__onboarding_request__hive_merge
+joey-bi-prod-project.staging.stg_personal_loan_sys__hex_payload__hive_merge
+
+staging.stg_loan__sake_limit_customer_info
+staging.stg_loan__sake_limit_residential_info
+staging.stg_loan__sake_limit_work_info  (limit_customer_info_id as identifier....)
+staging.stg_loan__sake_aip_credit_limit
+staging.stg_loan__loan_credit_summary
+staging.stg_onboarding__idv_result_dmg_verification
+edw.ft_onboarding_channel_latest
+
+3rd Party data:
+staging.stg_loan__sake_advance_ai_record
+staging.stg_loan__sake_bps_score_record
+staging.stg_loan__sake_izi_salary
+staging.stg_credit_report__clik_enquired_individual__hive_merge
+
+NTB prefilter:
+joey-bi-prod-project.staging.ntb_prefilter_saku_kredit
+
+Fund-non fund:
+joey-bi-prod-project.sandbox_da.v_prefiltering_funded_flag
+
+
+Fraud list yg dibuka:
+joey-bi-ss-risk-fraud-project.credit.watchlist_eligible_saqu_credit_customers
+
+CASA Persona:
+joey-bi-prod-project.saqu.v_persona_v2
+joey-bi-prod-project.saqu.ft_history_user_persona_v2_k4_REPLICATE
+joey-bi-prod-project.saqu.ft_userpersonav2
+
+CASA features:
+joey-bi-prod-project.edw.ft_customer_portfolio_history
+joey-bi-prod-project.edw.ft_customer_portfolio_history_v2
+
+ACQUISITION 
+joey-bi-prod-project.edw.ft_onboarding_channel_latest 
+
+PAYMENT 
+joey-bi-prod-project.edw.edw_payment_transaction
+joey-bi-prod-project.edw.edw_payment_transaction_biller 
+
+POCKETS 
+joey-bi-prod-project.edw.edw_pocket_account
+
+DEPO/BUSPO
+joey-bi-prod-project.edw.edw_gosave_and_td_account
+
+DIM DATES
+joey-bi-prod-project.edw.dt_complete_date 
+
+LOGIN, UNINSTALL, MOBILE ACTIVITIES (FE)
+joey-bi-prod-project.saqu.ft_customer_historical_activities
+
+LOCATION MOBILITY
+joey-bi-prod-project.sandbox_da.ft_customer_activity_location_v2 
+
+RFM SEGMENTS
+ joey-bi-prod-project.edw.ft_rfm_segmentation_daily_v3 
+
+USER PERSONA Saqu.v_persona_v2 (VIEW TABLE) 
+analytic-vertex-project.outbox.ft_history_user_persona_v2_k4
+
+PROPENSITY SCORE: SAKU KREDIT 
+analytic-vertex-project.outbox.ft_sake_propensity_score_evertrx
