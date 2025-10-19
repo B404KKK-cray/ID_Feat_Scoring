@@ -1,0 +1,14 @@
+{
+  "type": "AWOLservice_account", -- remove the text AWOL
+  "project_id": "joey-bi-ss-risk-fraud-project",
+  "private_key_id": "6c241ee04dad0162b787c3e10989edf373832678",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwwf2Ltg++Vs8U\nT/fWGvxvAXdrfzifHeeL2BD1BuQRQe+2KqokaA0cksctVZCJEfTJz4QUTI8GTr0S\njJmbvG+/Ng++I3DBpRADkRG6ASSRGpYq2A/nJvlqZvgVCXuL+/ONnHTpb2HS0zfh\nx8LSmywCBg3t/Z0TMfywKRphBdbJ3c5K5v8VdtkGIrLNSHXR9xbWQJbMYAxXE0DB\nPhiZfIkSKG6wOwOfjobEHVR/9Zjbv1qLQNT2Hw4Z5nDlmDL8uYSAscPI9VQCUbAC\n+ixgcVh2ZtPpP9o4cGJIS/YGZxeVAny2mEJuuM31dxpLtMI4oH8gbWV98gQnwYIw\nMzmc4knxAgMBAAECggEAEgdPUZs5wtu+1l8Ls8pf2gCnyg6ZW11k+xYIML3JsFrt\n1MJIRVtZjwMHjr+t9NUghx8D5UAjzGxmi4hMuJ5BNZsRgv7BZvbribmXucWZEbXJ\nAEi2YojOosQq5JZphA8oOdbt88tZCnRhvEUwQWPzWqd8bzxRc55DHEKs/p1mWYN7\nJ0AXaz6ou9ryQ0vbzdoX4ceQ10VfsIORwOIdoI5pP4yfJ81v0nILBHpxhvUR8TlE\neK49ryUkJkuFJt8aNkQ0quIyfuX569b2O6xCyEXsYtW3q21Bx1l1FEUrwO/3ea9M\nmCZTl4MIfxCMlFkEZfDScKEJ+uC5YpDsndzQIFPmuQKBgQDiYMXUIFPGiXdX8DBI\nckCCZZKu04nMxNWUQ8yFXpzXB8GRSiHcSx6mhkXsgawveYD8ZoJjsWXH4Q0YL4Dr\nL0ZkRx0bfr/D0hImxX9prshcXXMSdW1hmZECjA5Wt59amxwpCihocxTi0yZNnnWq\n2ywVwSbl+XgaBuTw4VWPIffIHQKBgQDH4wj+3TyAqyL0I+vOQPu8fDCSodX2bV6e\nXCsH1uWGMQK/R9vah1ILJzWFsmV80+IyfH6f8DoTq/cHd5lHQJNHefuzmmfHOqaD\n8y648ioZTwFU/PzW7JuIV1YTCe6TQ6tgUFCv61cERcvrrryBn4xBo+yvqSNo0x/2\n3LkD/sro5QKBgEJPcINjeMa2K6QxsiL2fJj1odLeGgZGPf2xIm6KuUxvdC7X1TVP\nN8o1mLPfhA1f/P1yFY2YQCUdchV8jLnXXjovboJITWnR1glPXrQZQ41yvitRBFpL\nfmONnQGfxejneIc4938o/pw2l4iy+uqySqaQrpE80wZksJkymDpWC9utAoGBAMPh\n2Y7pf8EX9MkL6qnVRN0RVwhbUDKOO4s1B3ZHQeafYPHSmcEtm1kSs4CxsoMBoUmY\ndv6FjGR6wTqwGaWZwrro76CyT8EN2OC2D7NunZLvuX5v7dcxR7n03IUL1qC6T9ey\n3V+IYV3uiEgOlOzyTaCF5AzA09KGE2z4INepeW+BAoGBAM1VTPBiGpj5lqgKayrM\nppHiw/EqKGvd4eQNxAF/OinJdOrsY7m8v/zFLhuLuGS2vSKVTmTvV/h1xsPkV1pH\nYYpOhQZC01hP+92ZzxRPntiraxcGUjSQLkHEr16c6smwarl1iu3V7XRGMYnVaQgB\nYYdhZJBLWl2XcD2WUF/U5nIG\n-----END PRIVATE KEY-----\n",
+  "client_email": "risk-service-account@joey-bi-ss-risk-fraud-project.iam.gserviceaccount.com",
+  "client_id": "116828938067328121645",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/risk-service-account%40joey-bi-ss-risk-fraud-project.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+ 
